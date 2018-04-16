@@ -1,0 +1,111 @@
+/* Modules */
+
+.product-list-module {
+	padding: 10px;
+}
+
+.product-list-module__select-filter {
+	display: block;
+	text-align: right;
+	background-color: $filter-bg-color;
+	padding: 10px;
+
+	@media only screen and (max-width : 480px) {
+		text-align: left;
+	}
+}
+
+.product-list-module__select-filter select {
+	margin-top: 5px;
+	margin-right: 10px;
+	font-size: 0.8em;
+
+	@media only screen and (max-width : 480px) {
+		width: 100%;
+	}
+}
+
+.product-list-module__select-filter h2 {
+	float: left;
+
+	@media only screen and (max-width : 480px) {
+		float: none;
+	}
+}
+
+.product-list-module__product-list__list {
+	margin: 0px;
+	padding: 0px;
+}
+
+.product-list-module__product-list__list__list-item {
+	list-style: none;
+	float: left;
+	width: 25%;
+	height: 380px;
+
+	@media all and (max-width: 991px) { 
+		width: 33.33%;
+	}
+
+	@media only screen and (max-width : 768px) {
+		width: 50%;
+	}
+
+	@media only screen and (max-width : 480px) {
+		width: 100%;
+	}
+}
+
+.product-list-module__product-list__list__list-item .product-item-container {
+	border: 1px solid $border-color;
+	display: block;
+	height: 100%;
+}
+
+.product-list-module__product-list__list__list-item .product-item-inner {
+	padding: 10px;
+	display: block;
+}
+
+.product-list-module__product-list__list__list-item .product-image {
+	display: table; 
+	width: 100%;
+	text-align: center;
+}
+
+.product-list-module__product-list__list__list-item .sale-exclusive {
+	display: block;
+	min-height: 48px;
+}
+
+.product-list-module__product-list__list__list-item .product-sale,  .product-list-module__product-list__list__list-item .product-exclusive{
+	color: $white;
+	padding: 10px 25px;
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 0.8em;
+}
+
+.product-list-module__product-list__list__list-item .product-sale {
+	background-color: $sale-bg-color;
+}
+
+.product-list-module__product-list__list__list-item .product-exclusive {
+	background-color: $exclusive-bg-color;
+}
+
+.product-list-module__product-list__list__list-item .product-price-wrapper {
+	display: table;
+	width: 100%;
+}
+.product-list-module__product-list__list__list-item .product-name {
+	display: table-cell;
+	width: 70%;
+}
+
+.product-list-module__product-list__list__list-item .product-price {
+	display: table-cell;
+	width: 30%;
+	text-align: right;
+}
