@@ -107,9 +107,8 @@ describe('<ProductList />', () => {
 		wrapper = shallow(<ProductList products={products} activeFilter="XL"/>)
 	})
 	
-	it('Product list renders', () => {	
-		console.log(wrapper.debug())
-		// expect(wrapper.find('ul').exists()).to.equal(true);
+	it('Product list renders when filter is set to XL', () => {	
+		expect(wrapper.find('ul').exists()).to.equal(true);
     })
 });
 
