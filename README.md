@@ -11,7 +11,7 @@ The solution is based on the below technologies:
 
 ```
 > git clone https://github.com/kewlhari/code-test-01.git
-> cd code-test-01.git
+> cd code-test-01
 > npm install
 > npm start
 ```
