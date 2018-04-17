@@ -6,7 +6,7 @@ The solution is based on the below technologies:
 - React, Redux
 - Mocha, Chai, Enzyme, Sinon
 
-## Requirements
+### Requirements
 
 - npm version 5.0
 
