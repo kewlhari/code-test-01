@@ -7,7 +7,7 @@ export class ProductList extends Component {
   }
   renderProductItem(product, index) {
     return(
-      <li className="product-list-module__product-list__list__list-item">
+      <li className="product-list-module__product-list__list__list-item" key={index}>
           <span className="product-item-container">
             <span className="product-item-inner">
               <span className="product-image">
