@@ -6,8 +6,7 @@
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ignore-styles ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test": "node_modules/.bin/mocha -w --compilers js:babel-core/register --require ignore-styles tests/setup.js tests/*"
   },
   "author": "",
   "license": "ISC",
@@ -17,15 +16,19 @@
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
     "chai": "^3.5.0",
-    "chai-jquery": "^2.0.0",
+    "chai-enzyme": "^0.4.2",
     "css-loader": "^0.28.11",
+    "enzyme": "^2.9.1",
+    "enzyme-adapter-react-16": "^1.1.1",
     "ignore-styles": "^5.0.1",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
-    "mocha": "^2.4.5",
+    "mocha": "^3.0.2",
     "node-sass": "^4.8.3",
     "react-addons-test-utils": "^0.14.7",
+    "redux-mock-store": "^1.0.2",
     "sass-loader": "^7.0.1",
+    "sinon": "^1.17.7",
     "style-loader": "^0.20.3",
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.14.0"
