@@ -2,7 +2,7 @@
 
 body {
 	color: $body-font-color;
-	font-family: Arial;
+	font-family: $body-font-family;
 	font-size: $body-font-size;
     margin: 0;
     padding: 0;
@@ -11,4 +11,8 @@ body {
 h2 {
 	margin: 0px;
 	padding: 0px;
+}
+
+select {
+	font-size: $body-font-size;
 }

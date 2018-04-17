@@ -10,7 +10,7 @@
 	background-color: $filter-bg-color;
 	padding: 10px;
 
-	@media only screen and (max-width : 480px) {
+	@media only screen and (max-width : $small) {
 		text-align: left;
 	}
 }
@@ -18,9 +18,8 @@
 .product-list-module__select-filter select {
 	margin-top: 5px;
 	margin-right: 10px;
-	font-size: 0.8em;
 
-	@media only screen and (max-width : 480px) {
+	@media only screen and (max-width : $small) {
 		width: 100%;
 	}
 }
@@ -28,7 +27,7 @@
 .product-list-module__select-filter h2 {
 	float: left;
 
-	@media only screen and (max-width : 480px) {
+	@media only screen and (max-width : $small) {
 		float: none;
 	}
 }
@@ -42,17 +41,17 @@
 	list-style: none;
 	float: left;
 	width: 25%;
-	height: 380px;
+	height: 400px;
 
-	@media all and (max-width: 991px) { 
+	@media all and (max-width: $large) { 
 		width: 33.33%;
 	}
 
-	@media only screen and (max-width : 768px) {
+	@media only screen and (max-width : $medium) {
 		width: 50%;
 	}
 
-	@media only screen and (max-width : 480px) {
+	@media only screen and (max-width : $small) {
 		width: 100%;
 	}
 }
@@ -84,7 +83,7 @@
 	padding: 10px 25px;
 	display: inline-block;
 	margin-bottom: 10px;
-	font-size: 0.8em;
+	font-size: ($body-font-size - 0.2);
 }
 
 .product-list-module__product-list__list__list-item .product-sale {
@@ -101,6 +100,7 @@
 }
 .product-list-module__product-list__list__list-item .product-name {
 	display: table-cell;
+	font-weight: bold;
 	width: 70%;
 }
 
@@ -108,4 +108,6 @@
 	display: table-cell;
 	width: 30%;
 	text-align: right;
+	font-size: ($body-font-size + 0.5);
+	font-weight: bold;
 }
