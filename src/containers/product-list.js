@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 
-class ProductList extends Component {
+export class ProductList extends Component {
 	constructor(props){
     	super(props);
   }

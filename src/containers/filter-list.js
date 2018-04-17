@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import selectFilter from '../actions/action_select_filter'
 import {bindActionCreators} from 'redux'
 
-class FilterList extends Component {
+export class FilterList extends Component {
   constructor(props){
     super(props);
     this.change = this.change.bind(this);
