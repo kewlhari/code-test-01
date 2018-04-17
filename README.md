@@ -16,6 +16,9 @@ The solution is based on the below technologies:
 > npm start
 ```
 
+App should be accessible via http://localhost:8080/
+
+
 ### Running tests
 
 ```
